@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS lanParty_db;
+CREATE DATABASE lanParty_db;
