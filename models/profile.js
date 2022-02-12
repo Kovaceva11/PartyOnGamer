@@ -11,16 +11,16 @@ profile.init(
 
 {
     birthday: {
-    type: DataTypes.STRING
+    type: DataTypes.STRING,
   },
   steamID: {
-    type: DataTypes.STRING
+    type: DataTypes.STRING,
   },
   originID: {
-    type: DataTypes.STRING
+    type: DataTypes.STRING,
   },
   twitchID: {
-    type: DataTypes.STRING
+    type: DataTypes.STRING,
   }
 },
 

@@ -8,17 +8,24 @@ merch.init(
   // Define fields/columns on model
   // An `id` is automatically created by Sequelize, though best practice would be to define the primary key ourselves
   {
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
+    },
+
     itemName: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
     },
     description: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
     },
     price: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
     },
     quantity: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
     }
   },
   {
