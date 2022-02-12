@@ -14,3 +14,5 @@ checking for rename
 made model and seeds for login and profile
 
 made model and seed for merch
+
+updated seeds for login, profile and merch
