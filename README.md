@@ -18,3 +18,5 @@ made model and seed for merch
 updated seeds for login, profile and merch
 
 updated controller index.js
+
+updated userRoutes.js api controllers
