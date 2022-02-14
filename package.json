@@ -1,5 +1,5 @@
 {
-  "name": "crowd-funding",
+  "name": "PartyOnGamer",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -15,12 +15,18 @@
     "bcrypt": "^5.0.0",
     "connect-session-sequelize": "^7.0.4",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.2",
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.1",
+<<<<<<< HEAD
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.16.1"
+=======
     "mdb-ui-kit": "^3.10.2",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
+>>>>>>> ad8a5f245c4fffccfdaabeda380969ad486e4152
   },
   "devDependencies": {
     "eslint": "^7.12.1",
