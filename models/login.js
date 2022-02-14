@@ -9,13 +9,16 @@ login.init(
   // An `id` is automatically created by Sequelize, though best practice would be to define the primary key ourselves
   {
     userName: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      allowNull: false
     },
     password: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      allowNull: false
     },
     email: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        allowNull: false
     }
   },
   {
