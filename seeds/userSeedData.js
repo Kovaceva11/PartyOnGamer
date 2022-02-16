@@ -2,34 +2,34 @@ const { User } = require("../models");
 
 const userSeedData = [
   {
-    username: "saviecee",
+    pogUsername: "saviecee",
     password: "PeterBrown",
     email: "saviecee@aol.com",
   },
 
   {
-    username: "tactileindicator",
+    pogUsername: "tactileindicator",
     password: "iloveyou",
     email: "verynice@hotmail.com",
   },
 
   {
-    username: "holeinthesun",
+    pogUsername: "holeinthesun",
     password: "isthatso?",
     email: "trainedprofessional@gmail.com",
   },
   {
-    username: "carfire",
+    pogUsername: "carfire",
     password: "songs4you",
     email: "lbrownhubbard@icloud.com",
   },
   {
-    username: "7housesofparliament",
+    pogUsername: "7housesofparliament",
     password: "se7endevils",
     email: "guccigurl@aol.com",
   },
   {
-    username: "killkarl",
+    pogUsername: "killkarl",
     password: "th3dayisdone",
     email: "theonewhoknocks@hotmail.com",
   },
