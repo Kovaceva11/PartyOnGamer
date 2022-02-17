@@ -15,8 +15,13 @@ Merch.init(
       autoIncrement: true,
     },
 
+  imageURL: {type: DataTypes.STRING
+
+  },
+
     itemName: {
       type: DataTypes.STRING,
+      unique: true
     },
     description: {
       type: DataTypes.STRING,
