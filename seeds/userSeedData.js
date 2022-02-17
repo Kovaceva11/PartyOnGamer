@@ -33,6 +33,12 @@ const userSeedData = [
     password: "th3dayisdone",
     email: "theonewhoknocks@hotmail.com",
   },
+  {
+    pogUsername: "Adam",
+    password: "password1",
+    email: "adam@mail.com",
+  },
+
 ];
 
 const userData = () => User.bulkCreate(userSeedData);

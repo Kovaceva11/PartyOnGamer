@@ -18,36 +18,47 @@ const loginFormHandler = async (event) => {
         document.location.replace('/profile');
       } else {
         alert(response.statusText);
-      }
-    }
-  };
-  
-  const signupFormHandler = async (event) => {
-    event.preventDefault();
-  
-    const name = document.querySelector('#name-signup').value.trim();
-    const email = document.querySelector('#email-signup').value.trim();
-    const password = document.querySelector('#password-signup').value.trim();
-  
-    if (name && email && password) {
-      const response = await fetch('/api/users', {
-        method: 'POST',
-        body: JSON.stringify({ name, email, password }),
-        headers: { 'Content-Type': 'application/json' },
-      });
-  
+      };
+
       if (response.ok) {
-        document.location.replace('/profile');
-      } else {
-        alert(response.statusText);
+        console.log('successful login')
       }
     }
   };
+  
+  // const signupFormHandler = async (event) => {
+  //   event.preventDefault();
+  
+  //   const pogUsername = document.querySelector('#pogUsername').value.trim();
+  //   const email = document.querySelector('#email').value.trim();
+  //   const password = document.querySelector('#password').value.trim();
+  //   const steamID = document.querySelector('#steamID').value.trim();
+  //   const battlenetID = document.querySelector('#battlenetID').value.trim();
+  //   const twitchID = document.querySelector('#twitchID').value.trim();
+
+  //   // adding additional properties.
+  
+  //   if (pogUsername && email && password && steamID && battlenetID && twitchID) {
+  //     const response = await fetch('/api/pogProfile', {
+  //       method: 'POST',
+  //       body: JSON.stringify({ pogUsername, email, password, steamID, battlenetID, twitchID}),
+  //       headers: { 'Content-Type': 'application/json' },
+  //     });
+  
+  //     if (response.ok) {
+  //       document.location.replace('/profile');
+  //     } else {
+  //       alert(response.statusText);
+  //     }
+  //   }
+
+  //   // create a post to a second db for user profiles
+  // };
   
   document
-    .querySelector('.login-form')
+    .querySelector('#login-form')
     .addEventListener('submit', loginFormHandler);
   
-  document
-    .querySelector('.signup-form')
-    .addEventListener('submit', signupFormHandler);
+  // document
+  //   .querySelector('.create-profile')
+  //   .addEventListener('submit', signupFormHandler);
