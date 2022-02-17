@@ -3,9 +3,15 @@ const sequelize = require("../config/connection");
 const { Post, User, Comment } = require("../models");
 
 router.get("/", (req, res) => {
-  // console.log(req.session);
-  // res.sendFile(path.join(__dirname, './views/layout/main'))
+  res.render("homepage");
+});
+
+router.get("/login", (req, res) => {
   res.render("login");
+});
+
+router.get("/register", (req, res) => {
+  res.render("register");
 });
 
 module.exports = router;
