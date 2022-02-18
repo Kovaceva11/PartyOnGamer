@@ -1,5 +1,5 @@
 const User = require("./User");
-const Profile = require("./Profile");
+// const Profile = require("./Profile");
 const Merch = require("./Merch");
 const Post = require("./Post");
 const Comments = require("./Comments");
@@ -13,4 +13,4 @@ const Comments = require("./Comments");
 //   foreignKey: "user_id",
 // });
 
-module.exports = { User, Profile, Merch, Post, Comments };
+module.exports = { User, Merch, Post, Comments };
