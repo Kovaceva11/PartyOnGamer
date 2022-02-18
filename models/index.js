@@ -1,8 +1,8 @@
 const User = require("./User");
 // const Profile = require("./Profile");
-const Merch = require("./Merch");
-const Post = require("./Post");
-const Comments = require("./Comments");
+// const Merch = require("./Merch");
+// const Post = require("./Post");
+// const Comments = require("./Comments");
 
 // User.hasMany(Project, {
 //   foreignKey: "user_id",
@@ -13,4 +13,4 @@ const Comments = require("./Comments");
 //   foreignKey: "user_id",
 // });
 
-module.exports = { User, Merch, Post, Comments };
+module.exports = { User };
