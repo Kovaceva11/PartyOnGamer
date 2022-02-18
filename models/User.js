@@ -16,7 +16,7 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    pogUsername: {
+    pog_username: {
       type: DataTypes.STRING,
       unique: true,
       allowNull: false,

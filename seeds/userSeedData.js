@@ -2,39 +2,39 @@ const { User } = require("../models");
 
 const userSeedData = [
   {
-    pogUsername: "saviecee",
+    pog_username: "saviecee",
     password: "PeterBrown",
     email: "saviecee@aol.com",
   },
 
   {
-    pogUsername: "tactileindicator",
+    pog_username: "tactileindicator",
     password: "iloveyou",
     email: "verynice@hotmail.com",
   },
 
   {
-    pogUsername: "holeinthesun",
+    pog_username: "holeinthesun",
     password: "isthatso?",
     email: "trainedprofessional@gmail.com",
   },
   {
-    pogUsername: "carfire",
+    pog_username: "carfire",
     password: "songs4you",
     email: "lbrownhubbard@icloud.com",
   },
   {
-    pogUsername: "7housesofparliament",
+    pog_username: "7housesofparliament",
     password: "se7endevils",
     email: "guccigurl@aol.com",
   },
   {
-    pogUsername: "killkarl",
+    pog_username: "killkarl",
     password: "th3dayisdone",
     email: "theonewhoknocks@hotmail.com",
   },
   {
-    pogUsername: "Adam",
+    pog_username: "Adam",
     password: "password1",
     email: "adam@mail.com",
   },

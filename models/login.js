@@ -8,11 +8,11 @@ login.init(
   // Define fields/columns on model
   // An `id` is automatically created by Sequelize, though best practice would be to define the primary key ourselves
   {
-    userName: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true
-    },
+    // pog_username: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    //   unique: true
+    // },
     password: {
       type: DataTypes.STRING,
       allowNull: false

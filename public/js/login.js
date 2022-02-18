@@ -29,7 +29,7 @@ const loginFormHandler = async (event) => {
   // const signupFormHandler = async (event) => {
   //   event.preventDefault();
   
-  //   const pogUsername = document.querySelector('#pogUsername').value.trim();
+  //   const pog_username = document.querySelector('#pog_username').value.trim();
   //   const email = document.querySelector('#email').value.trim();
   //   const password = document.querySelector('#password').value.trim();
   //   const steamID = document.querySelector('#steamID').value.trim();
@@ -38,10 +38,10 @@ const loginFormHandler = async (event) => {
 
   //   // adding additional properties.
   
-  //   if (pogUsername && email && password && steamID && battlenetID && twitchID) {
+  //   if (pog_username && email && password && steamID && battlenetID && twitchID) {
   //     const response = await fetch('/api/pogProfile', {
   //       method: 'POST',
-  //       body: JSON.stringify({ pogUsername, email, password, steamID, battlenetID, twitchID}),
+  //       body: JSON.stringify({ pog_username, email, password, steamID, battlenetID, twitchID}),
   //       headers: { 'Content-Type': 'application/json' },
   //     });
   
@@ -56,7 +56,7 @@ const loginFormHandler = async (event) => {
   // };
   
   document
-    .querySelector('#login-form')
+    .querySelector('.login-form')
     .addEventListener('submit', loginFormHandler);
   
   // document
