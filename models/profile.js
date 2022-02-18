@@ -9,13 +9,13 @@ Profile.init(
   // An `id` is automatically created by Sequelize, though best practice would be to define the primary key ourselves
 
   {
-    birthday: {
+    pogUsername: {
       type: DataTypes.STRING,
     },
     steamID: {
       type: DataTypes.STRING,
     },
-    originID: {
+    battlenetID: {
       type: DataTypes.STRING,
     },
     twitchID: {

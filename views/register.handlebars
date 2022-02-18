@@ -1,75 +1,56 @@
-<form>
-  <!-- 2 column grid layout with text inputs for the first and last names -->
-  <div class="row mb-4">
-    <div class="col">
-      <div class="form-outline">
-        <input type="text" id="form3Example1" class="form-control" />
-        <label class="form-label" for="form3Example1">First name</label>
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-4">
+               <h2 class="fw-bold mb-2 text-uppercase">Create Profile</h2>
+              <p class="text-white-50 mb-5">Please Create your POG Profile</p>
+              <!-- Activision Blizzard input for Overwatch -->
+            <div class="form-outline mb-4">
+              <input type="text" id="pogUsername" class="form-control" />
+              <label class="form-label" for="pogUsername">POG Account Username</label>
+            </div>
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input type="password" id="password" class="form-control" />
+              <label class="form-label" for="password">Create Password</label>
+            </div>              
+            </div>
+            <p class="text-white-50 mb-5">Enter Your Gaming Tags below to sync stats on your POG Account</p>
+
+            <!-- Activision Blizzard input for Overwatch -->
+            <div class="form-outline mb-4">
+              <input type="text" id="battlenetID" class="form-control" />
+              <label class="form-label" for="battlenetID">Battlenet Username</label>
+            </div>
+
+            <!-- SteamID input -->
+            <div class="form-outline mb-4">
+              <input type="text" id="steamID" class="form-control" />
+              <label class="form-label" for="steamID">Steam ID or Username</label>
+            </div>            
+
+            <div class="form-outline mb-4">
+              <input type="text" id="twitchID" class="form-control" />
+              <label class="form-label" for="twitchID">Twitch Username</label>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="email" class="form-control" />
+              <label class="form-label" for="email">Email address</label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Create Profile</button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col">
-      <div class="form-outline">
-        <input type="text" id="form3Example2" class="form-control" />
-        <label class="form-label" for="form3Example2">Last name</label>
-      </div>
-    </div>
   </div>
+</section>
 
-  <!-- Activision Blizzard input for Overwatch -->
-  <div class="form-outline mb-4">
-    <input type="text" id="form3Example3" class="form-control" />
-    <label class="form-label" for="form3Example3">Battlenet Username</label>
-  </div>
-
-  <!-- SteamID input -->
-  <div class="form-outline mb-4">
-    <input type="text" id="form3Example4" class="form-control" />
-    <label class="form-label" for="form3Example4">Steam ID or Username</label>
-  </div>
-
-  <!-- Email input -->
-  <div class="form-outline mb-4">
-    <input type="email" id="form3Example5" class="form-control" />
-    <label class="form-label" for="form3Example5">Email address</label>
-  </div>
-
-  <!-- Password input -->
-  <div class="form-outline mb-4">
-    <input type="password" id="form3Example6" class="form-control" />
-    <label class="form-label" for="form3Example6">Password</label>
-  </div>
-
-  <!-- Checkbox -->
-  <div class="form-check d-flex justify-content-center mb-4">
-    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
-    <label class="form-check-label" for="form2Example33">
-      Subscribe to our newsletter
-    </label>
-  </div>
-
-  <!-- Submit button -->
-  <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
-
-  <!-- Register buttons -->
-  <div class="text-center">
-    <p>or sign up with:</p>
-    <button type="button" class="btn btn-primary btn-floating mx-1">
-      <i class="fab fa-facebook-f"></i>
-    </button>
-
-    <button type="button" class="btn btn-primary btn-floating mx-1">
-      <i class="fab fa-google"></i>
-    </button>
-
-    <button type="button" class="btn btn-primary btn-floating mx-1">
-      <i class="fab fa-twitter"></i>
-    </button>
-
-    <button type="button" class="btn btn-primary btn-floating mx-1">
-      <i class="fab fa-github"></i>
-    </button>
-  </div>
-</form>
-
-{{!-- point to javascript register file --}}
-<script src="../public/js/register.js"></script>
+<script src="../public/js/profile.js"></script>
