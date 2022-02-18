@@ -6,7 +6,7 @@ class Merch extends Model {}
 
 Merch.init(
   // Define fields/columns on model
-  // An `id` is automatically created by Sequelize, though best practice would be to define the primary key ourselves
+  // An id is automatically created by Sequelize, though best practice would be to define the primary key ourselves
   {
     id: {
       type: DataTypes.INTEGER,
@@ -15,8 +15,11 @@ Merch.init(
       autoIncrement: true,
     },
 
+    imageURL: { type: DataTypes.STRING },
+
     itemName: {
       type: DataTypes.STRING,
+      unique: true,
     },
     description: {
       type: DataTypes.STRING,
@@ -31,7 +34,7 @@ Merch.init(
   {
     // Link to database connection
     sequelize,
-    // Set to false to remove `created_at` and `updated_at` fields
+    // Set to false to remove created_at and updated_at fields
     freezeTableName: true,
     timestamps: false,
     underscored: true,
