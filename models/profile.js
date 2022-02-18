@@ -9,7 +9,7 @@ Profile.init(
   // An `id` is automatically created by Sequelize, though best practice would be to define the primary key ourselves
 
   {
-    pogUsername: {
+    pog_username: {
       type: DataTypes.STRING,
     },
     steamID: {

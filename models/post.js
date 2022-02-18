@@ -6,7 +6,7 @@ class Post extends Model {}
 
 Post.init(
   {
-    userName: {
+    pog_username: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
