@@ -1,10 +1,10 @@
 const router = require("express").Router();
-const { merch } = require("../models");
+const { Merch } = require("../../models");
 
 // GET all merch
 router.get("/", async (req, res) => {
   try {
-    const dbMerchData = await merch.findAll({});
+    const dbMerchData = await Merch.findAll({});
 
     const merchData = dbMerchData.map((merch) => merch.get({ plain: true }));
 
@@ -18,7 +18,7 @@ router.get("/", async (req, res) => {
 // GET one gallery
 router.get("/merch/:id", async (req, res) => {
   try {
-    const dbMerchData = await merch.findByPk(req.params.id, {});
+    const dbMerchData = await Merch.findByPk(req.params.id, {});
 
     const merchData = [dbMerchData.get({ plain: true })];
     res.render("store", { merchData });
