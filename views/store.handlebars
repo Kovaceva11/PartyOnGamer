@@ -1,11 +1,11 @@
 <section class="card">
   <a href="/merch/{{id}}">
-    <header>{{name}}</header>
+    <header>{{itemName}}</header>
     <img src="/images/{{filename}}" alt="{{description}}">
-    <section class="flex-row justify-center"></section>
+    <section class="flex-row justify-center">
     <ul>
         {{#each merchData as |item| }}
-        {{>merchDetails}}
+        {{>merch-partials}}
         {{/each}}
     </ul>
     </section>
