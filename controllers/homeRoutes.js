@@ -39,4 +39,8 @@ router.get("/merch/:id", async (req, res) => {
   }
 });
 
+router.get('/profiles',(req,res) => {
+  res.render('profile');
+})
+
 module.exports = router;
