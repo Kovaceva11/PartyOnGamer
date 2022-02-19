@@ -38,6 +38,11 @@ const userSeedData = [
     password: "password1",
     email: "adam@mail.com",
   },
+  {
+    pog_username: "PoopMonster",
+    password: "password1",
+    email: "pooopmonster987@gmail.com",
+  },
 
 ];
 
